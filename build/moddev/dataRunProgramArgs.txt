@@ -1,0 +1,23 @@
+# Main Class
+net.neoforged.fml.startup.DataClient
+
+# NeoForge Run-Type Program Arguments
+--assetIndex
+27
+--assetsDir
+/home/corrinvc/.gradle/caches/neoformruntime/assets
+--fml.mcVersion
+1.21.10
+--fml.neoForgeVersion
+21.10.52-beta
+--fml.neoFormVersion
+20251010.172816
+
+# User Supplied Program Arguments
+--mod
+jackolanternvariants
+--all
+--output
+/home/corrinvc/Public/Programming/MCModding/JackoLantern-Variants/src/generated/resources
+--existing
+/home/corrinvc/Public/Programming/MCModding/JackoLantern-Variants/src/main/resources

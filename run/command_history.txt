@@ -1,0 +1,2 @@
+/give @s jackolanternvariants:copper_jack_o_lantern
+/give @s jackolanternvariants:soul_jack_o_lantern

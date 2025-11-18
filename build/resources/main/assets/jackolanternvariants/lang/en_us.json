@@ -1,0 +1,13 @@
+{
+  "itemGroup.jackolanternvariants": "Example Mod Tab",
+  "block.jackolanternvariants.example_block": "Example Block",
+  "item.jackolanternvariants.example_item": "Example Item",
+
+  "jackolanternvariants.configuration.title": "Jack-O-Lantern Variants Configs",
+  "jackolanternvariants.configuration.section.jackolanternvariants.common.toml": "Jack-O-Lantern Variants Configs",
+  "jackolanternvariants.configuration.section.jackolanternvariants.common.toml.title": "Jack-O-Lantern Variants Configs",
+  "jackolanternvariants.configuration.items": "Item List",
+  "jackolanternvariants.configuration.logDirtBlock": "Log Dirt Block",
+  "jackolanternvariants.configuration.magicNumberIntroduction": "Magic Number Text",
+  "jackolanternvariants.configuration.magicNumber": "Magic Number"
+}
