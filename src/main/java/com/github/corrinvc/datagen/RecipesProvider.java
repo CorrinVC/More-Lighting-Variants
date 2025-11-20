@@ -23,24 +23,37 @@ public class RecipesProvider extends RecipeProvider {
 
 	@Override
 	protected void buildRecipes() {
-		
+		//VanillaRecipeProvider
+		//BlockEntity
+		//LevelChunk.setBlockState(
 		// COPPER JACK-O-LANTERN
 		ShapedRecipeBuilder.shaped(registries.lookupOrThrow(Registries.ITEM), RecipeCategory.BUILDING_BLOCKS, ModBlocks.COPPER_JACK_O_LANTERN)
-			.pattern("A").pattern("B")
-			.define('A', Blocks.CARVED_PUMPKIN)
-			.define('B', Items.COPPER_TORCH)
+			.pattern("P").pattern("t")
+			.define('P', Blocks.CARVED_PUMPKIN)
+			.define('t', Items.COPPER_TORCH)
 			.unlockedBy("has_carved_pumpkin", has(Blocks.CARVED_PUMPKIN))
 			.unlockedBy("has_copper_torch", has(Items.COPPER_TORCH))
 			.save(this.output);	
 		
 		// SOUL JACK-O-LANTERN
 		ShapedRecipeBuilder.shaped(registries.lookupOrThrow(Registries.ITEM), RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_JACK_O_LANTERN)
-			.pattern("A").pattern("B")
-			.define('A', Blocks.CARVED_PUMPKIN)
-			.define('B', Items.SOUL_TORCH)
+			.pattern("P").pattern("t")
+			.define('P', Blocks.CARVED_PUMPKIN)
+			.define('t', Items.SOUL_TORCH)
 			.unlockedBy("has_carved_pumpkin", has(Blocks.CARVED_PUMPKIN))
 			.unlockedBy("has_soul_torch", has(Items.SOUL_TORCH))
 			.save(this.output);	
+		
+		// COPPER CAMPFIRE
+//		ShapedRecipeBuilder.shaped(registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.COPPER_CAMPFIRE)
+//			.pattern(" s ")
+//			.pattern("scs")
+//			.pattern("LLL")
+//			.define('c', Items.COPPER_INGOT)
+//			.define('L', ItemTags.LOGS)
+//			.define('s', Items.STICK)
+//			.unlockedBy("has_copper_ingot", has(Items.COPPER_INGOT))
+//			.save(this.output);
 	}
 	
 	public static class Runner extends RecipeProvider.Runner {

@@ -1,2 +1,5 @@
 /give @s jackolanternvariants:copper_jack_o_lantern
 /give @s jackolanternvariants:soul_jack_o_lantern
+/time set day
+/give @s
+/give @s jackolanternvariants:copper_campfire

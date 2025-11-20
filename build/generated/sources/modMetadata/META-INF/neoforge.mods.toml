@@ -18,10 +18,10 @@ license="All Rights Reserved"
 modId="jackolanternvariants" #mandatory
 
 # The version number of the mod
-version="1.0.0" #mandatory
+version="0.1" #mandatory
 
 # A display name for the mod
-displayName="Jack-O-Lantern Variants" #mandatory
+displayName="More Lighting Variants" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
@@ -36,11 +36,10 @@ displayName="Jack-O-Lantern Variants" #mandatory
 #credits="" #optional
 
 # A text field displayed in the mod UI
-authors="YourNameHere, OtherNameHere" #optional
+authors="CorrinVC" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''Example mod description.
-Newline characters can be used and will be replaced properly.'''
+description='''Adds Copper and Soul lighting variants to pre-existing light sources that don't have them!'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 #[[mixins]]

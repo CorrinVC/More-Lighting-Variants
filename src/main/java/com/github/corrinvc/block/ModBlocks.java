@@ -7,7 +7,6 @@ import com.github.corrinvc.item.ModItems;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -19,15 +18,21 @@ public class ModBlocks {
 	
 	public static final DeferredBlock<Block> COPPER_JACK_O_LANTERN = registerBlock(
 		"copper_jack_o_lantern",
-		properties -> new CarvedPumpkinBlock(properties),
+		properties -> new CustomPumpkinBlock(properties),
 		BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN)
 	);
 	
 	public static final DeferredBlock<Block> SOUL_JACK_O_LANTERN = registerBlock(
 		"soul_jack_o_lantern",
-		properties -> new CarvedPumpkinBlock(properties),
-		BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN)
+		properties -> new CustomPumpkinBlock(properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN).lightLevel(blockstate -> 10)
 	);
+	
+//	public static final DeferredBlock<Block> COPPER_CAMPFIRE = registerBlock(
+//		"copper_campfire",
+//		properties -> new CustomCampfireBlock(false, 1, properties),
+//		BlockBehaviour.Properties.ofFullCopy(Blocks.CAMPFIRE)
+//	);			
 			
 	private static <B extends Block> DeferredBlock<B> registerBlock(
 			String name, Function<BlockBehaviour.Properties, ? extends B> blockFactory, BlockBehaviour.Properties properties) {
@@ -41,6 +46,7 @@ public class ModBlocks {
 	}
 	
 	public static void register(IEventBus eventBus) {
+		//Blocks.
 		BLOCKS.register(eventBus);
 	}
 

@@ -21,6 +21,8 @@ public class DataGenerators {
 				List.of(new SubProviderEntry(BlockLootTableGenerator::new, LootContextParamSets.BLOCK)),
 				lookupProvider));
 		
+		event.createProvider(BlockTagProvider::new);
+		
 		event.createProvider(ModelGenerator::new);
 		
 		event.createProvider(RecipesProvider.Runner::new);

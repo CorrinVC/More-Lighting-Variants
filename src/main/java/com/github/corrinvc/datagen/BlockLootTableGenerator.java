@@ -17,8 +17,14 @@ public class BlockLootTableGenerator extends BlockLootSubProvider {
 
 	@Override
 	protected void generate() {
+		//VanillaBlockLoot.class
+		
 		dropSelf(ModBlocks.COPPER_JACK_O_LANTERN.get());
 		dropSelf(ModBlocks.SOUL_JACK_O_LANTERN.get());
+//		this.add(ModBlocks.COPPER_CAMPFIRE.get(), 
+//			block -> this.createSilkTouchDispatchTable(block, 
+//				(LootPoolEntryContainer.Builder<?>)this.applyExplosionCondition(block, 
+//					LootItem.lootTableItem(Items.COPPER_INGOT).apply(SetItemCountFunction.setCount(ConstantValue.exactly(1.0f))))));
 	}
 	
 	@Override

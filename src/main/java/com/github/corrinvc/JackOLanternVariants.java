@@ -3,6 +3,7 @@ package com.github.corrinvc;
 import com.github.corrinvc.block.ModBlocks;
 import com.github.corrinvc.item.ModItems;
 
+import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -10,6 +11,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -25,8 +27,12 @@ public class JackOLanternVariants {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         
+        modEventBus.addListener(this::addCreative);
+        
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        
+        //ModBlockEntities.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -34,6 +40,13 @@ public class JackOLanternVariants {
 
     private void commonSetup(FMLCommonSetupEvent event) {
 
+    }
+    
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+    	if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+    		event.accept(ModBlocks.COPPER_JACK_O_LANTERN);
+    		event.accept(ModBlocks.SOUL_JACK_O_LANTERN);
+    	}
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
