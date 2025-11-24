@@ -28,11 +28,11 @@ public class ModBlocks {
 		BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN).lightLevel(blockstate -> 10)
 	);
 	
-//	public static final DeferredBlock<Block> COPPER_CAMPFIRE = registerBlock(
-//		"copper_campfire",
-//		properties -> new CustomCampfireBlock(false, 1, properties),
-//		BlockBehaviour.Properties.ofFullCopy(Blocks.CAMPFIRE)
-//	);			
+	public static final DeferredBlock<Block> COPPER_CAMPFIRE = registerBlock(
+		"copper_campfire",
+		properties -> new CustomCampfireBlock(false, 1, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.CAMPFIRE)
+	);			
 			
 	private static <B extends Block> DeferredBlock<B> registerBlock(
 			String name, Function<BlockBehaviour.Properties, ? extends B> blockFactory, BlockBehaviour.Properties properties) {

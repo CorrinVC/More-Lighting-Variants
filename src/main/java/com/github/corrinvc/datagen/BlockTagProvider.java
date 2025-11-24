@@ -18,8 +18,10 @@ public class BlockTagProvider extends BlockTagsProvider {
 
 	@Override
 	protected void addTags(Provider provider) {
+		tag(BlockTags.CAMPFIRES).add(ModBlocks.COPPER_CAMPFIRE.get());
+		
 		tag(BlockTags.MINEABLE_WITH_AXE)
-			.add(/*ModBlocks.COPPER_CAMPFIRE.get(), */
+			.add(ModBlocks.COPPER_CAMPFIRE.get(),
 				ModBlocks.COPPER_JACK_O_LANTERN.get(), 
 				ModBlocks.SOUL_JACK_O_LANTERN.get());
 	}

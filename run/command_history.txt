@@ -3,3 +3,5 @@
 /time set day
 /give @s
 /give @s jackolanternvariants:copper_campfire
+/time set night
+/give @s jackolanternvariants:copper_campfire

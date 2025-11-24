@@ -1,6 +1,7 @@
 package com.github.corrinvc;
 
 import com.github.corrinvc.block.ModBlocks;
+import com.github.corrinvc.block.entity.ModBlockEntities;
 import com.github.corrinvc.item.ModItems;
 
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,7 +33,7 @@ public class JackOLanternVariants {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         
-        //ModBlockEntities.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -46,6 +47,8 @@ public class JackOLanternVariants {
     	if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
     		event.accept(ModBlocks.COPPER_JACK_O_LANTERN);
     		event.accept(ModBlocks.SOUL_JACK_O_LANTERN);
+    	} else if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+    		event.accept(ModBlocks.COPPER_CAMPFIRE);
     	}
     }
 

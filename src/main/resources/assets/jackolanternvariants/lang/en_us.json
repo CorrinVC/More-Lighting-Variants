@@ -1,4 +1,7 @@
 {
+  "block.jackolanternvariants.copper_campfire": "Copper Campfire",
   "block.jackolanternvariants.copper_jack_o_lantern": "Copper Jack o'Lantern",
-  "block.jackolanternvariants.soul_jack_o_lantern": "Soul Jack o'Lantern"
+  "block.jackolanternvariants.soul_jack_o_lantern": "Soul Jack o'Lantern",
+
+  "item.jackolanternvariants.copper_campfire": "Copper Campfire"  
 }

@@ -12,6 +12,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 
@@ -45,15 +46,15 @@ public class RecipesProvider extends RecipeProvider {
 			.save(this.output);	
 		
 		// COPPER CAMPFIRE
-//		ShapedRecipeBuilder.shaped(registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.COPPER_CAMPFIRE)
-//			.pattern(" s ")
-//			.pattern("scs")
-//			.pattern("LLL")
-//			.define('c', Items.COPPER_INGOT)
-//			.define('L', ItemTags.LOGS)
-//			.define('s', Items.STICK)
-//			.unlockedBy("has_copper_ingot", has(Items.COPPER_INGOT))
-//			.save(this.output);
+		ShapedRecipeBuilder.shaped(registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.COPPER_CAMPFIRE)
+			.pattern(" s ")
+			.pattern("scs")
+			.pattern("LLL")
+			.define('c', Items.COPPER_INGOT)
+			.define('L', ItemTags.LOGS)
+			.define('s', Items.STICK)
+			.unlockedBy("has_copper_ingot", has(Items.COPPER_INGOT))
+			.save(this.output);
 	}
 	
 	public static class Runner extends RecipeProvider.Runner {

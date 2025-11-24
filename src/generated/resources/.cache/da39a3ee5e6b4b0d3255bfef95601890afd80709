@@ -1,5 +1,7 @@
-// 1.21.10	2025-11-20T11:47:11.820932841	
+// 1.21.10	2025-11-24T15:15:23.569302831	
 bbcc6b2a455f43d2920ec1ab52c2109b52711889 data/jackolanternvariants/advancement/recipes/building_blocks/copper_jack_o_lantern.json
 cbb52a02541d307f755e873c5e00335893192477 data/jackolanternvariants/advancement/recipes/building_blocks/soul_jack_o_lantern.json
+4a8d38130c97eabc962d19ef825ddf9b80b7c7fa data/jackolanternvariants/advancement/recipes/decorations/copper_campfire.json
+d9fb8f052a1a54cb9d861caa6b2b78f190849104 data/jackolanternvariants/recipe/copper_campfire.json
 a26c4731d97cc9788a6cca47d16c34c531d3202e data/jackolanternvariants/recipe/copper_jack_o_lantern.json
 b7e47a8611472d232d8520826b0ca8c70f09f2aa data/jackolanternvariants/recipe/soul_jack_o_lantern.json

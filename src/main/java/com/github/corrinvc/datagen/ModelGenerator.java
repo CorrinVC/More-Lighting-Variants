@@ -20,7 +20,7 @@ public class ModelGenerator extends ModelProvider {
 	protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
 		blockModels.createPumpkinVariant(ModBlocks.COPPER_JACK_O_LANTERN.get(), TextureMapping.column(Blocks.PUMPKIN));
 		blockModels.createPumpkinVariant(ModBlocks.SOUL_JACK_O_LANTERN.get(), TextureMapping.column(Blocks.PUMPKIN));
-		
+		//BlockModelPart.
 		//blockModels.createCampfires(ModBlocks.COPPER_CAMPFIRE.get());
 	}
 
